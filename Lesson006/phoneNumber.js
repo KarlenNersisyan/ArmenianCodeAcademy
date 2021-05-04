@@ -4,9 +4,9 @@ function checkNumbers(str = "") {
     num.shift();
   }
 
-  for (let i = 0; i < num.length; i++) {
-    if (num[i] === " ") {
-      num.splice(i, 1);
+  for (let j = 0; j < num.length; j++) {
+    if (num[j] === " ") {
+      num.splice(j, 1);
     }
   }
 
@@ -18,4 +18,4 @@ function checkNumbers(str = "") {
     }
   }
 }
-console.log(checkNumbers("456 5584745"));
+console.log(checkNumbers("+45 85584745"));
