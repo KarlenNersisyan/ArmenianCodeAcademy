@@ -22,13 +22,13 @@ Simple Input 0
     s.split is not a function
 */
 
-function reverseString(number) {
+function reverseString(s) {
   try {
-    return number.split("").reverse().join("");
+    return s.split("").reverse().join("");
   } catch (error) {
-    console.log(number);
+    console.log(s);
     throw error;
   }
 }
 
-console.log(reverseString(100));
+console.log(reverseString(1234));
