@@ -18,6 +18,7 @@ let Airplane = {
 };
 const Singapore = Object.create(Airplane);
 const Armenia = Object.create(Airplane);
+//const Armenia = Object.assign(Airplane, { isFlying: false });
 
 Singapore.takeOff(Singapore);
 console.log("Singapore:", Singapore.isFlying);
