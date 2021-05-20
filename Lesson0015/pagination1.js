@@ -45,9 +45,10 @@ const Pagination = {
   },
 };
 const wordsNumbers = "a1b2c3d4e5f6g7".split("");
+
 Pagination.init(wordsNumbers, 4);
 // Pagination.nextPage().nextPage().prevPage();
-// Pagination.firstPage();
 // Pagination.lastPage();
 // Pagination.goToPage(3);
+// Pagination.firstPage();
 Pagination.getPageItems();
