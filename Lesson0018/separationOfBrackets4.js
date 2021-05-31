@@ -8,9 +8,8 @@ brackets in the middle. ("card -> (c (ar) d" but not "(c (a () r) d)"). Example`
 
 */
 
-let word = "Karl";
-const addBrackets = (word, result = "", i = 0) => {
-  if (word[i] === undefined) {
+function addBrackets(word, result = "", i = 0) {
+  if (!word[i]) {
     return result;
   }
   let middlePart = Math.floor(word.length / 2);
@@ -27,6 +26,6 @@ const addBrackets = (word, result = "", i = 0) => {
   i++;
 
   return addBrackets(word, result, i);
-};
+}
 
-console.log(addBrackets(word)); // (K(ar)l)
+console.log(addBrackets("Karl")); // (K(ar)l)
