@@ -25,4 +25,14 @@ const combinationsFactors = (n, first = 2, currentItem = 1, arr = []) => {
     return;
   }
 };
-combinationsFactors(3);
+
+combinationsFactors(32);
+
+/* 
+  2, 2, 2, 2, 2
+  2, 2, 2, 4
+  2, 2, 8
+  2, 4, 4
+  2, 16
+  4, 8
+*/
