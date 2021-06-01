@@ -3,14 +3,14 @@
 //     where sorting order is violated.
 // */
 
-const ascendingOrder = (arr, item = 1) => {
-  if (item === arr.length) {
+const ascendingOrder = (arr, i = 1) => {
+  if (i === arr.length) {
     return -1;
   }
-  if (arr[item] < arr[item - 1]) {
-    return item;
+  if (arr[i] < arr[i - 1]) {
+    return i;
   }
-  return ascendingOrder(arr, item + 1);
+  return ascendingOrder(arr, i + 1);
 };
 
-console.log(ascendingOrder([-9, -4, -4, 3, 12, 4, 5])); // 5
+console.log(ascendingOrder([1, 2, 3, 4, 5, 2, 8])); // 5
