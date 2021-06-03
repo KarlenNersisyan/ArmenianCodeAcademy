@@ -1,0 +1,52 @@
+function swap(arr, xp, yp) {
+  let temp = arr[xp];
+  arr[xp] = arr[yp];
+  arr[yp] = temp;
+}
+
+function bubbleSort(arr, n) {
+  let i, j;
+  for (i = 0; i < n - 1; i++) {
+    for (j = 0; j < n - i - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+        swap(arr, j, j + 1);
+      }
+    }
+  }
+}
+
+function printArray(arr, size) {
+  let i;
+  for (i = 0; i < size; i++) console.log(arr[i] + " ");
+  console.log("\n");
+}
+
+let arr = [64, 34, 25, 12, 22, 11, 90];
+let n = 7;
+console.log("UnSorted array:");
+printArray(arr, n);
+
+bubbleSort(arr, n);
+console.log("Sorted array:");
+printArray(arr, n);
+
+/*
+    UnSorted array:
+        64 
+        34 
+        25 
+        12 
+        22 
+        11 
+        90 
+
+
+    Sorted array:
+        11 
+        12 
+        22 
+        25 
+        34 
+        64 
+        90 
+*/
